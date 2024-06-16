@@ -41,3 +41,33 @@
     ];
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Hotels</title>
+</head>
+
+<body>
+
+    <ol>
+        <?php
+            foreach($hotels as $hotel) {
+                echo "<li><ul>";
+                echo "<li>Nome: ".$hotel["name"]."</li>";
+                echo "<li>Descrizione: ".$hotel["description"]."</li>";
+                echo "<li>Parcheggio: ";
+                if ($hotel["parking"]==true) {echo "Sì";} 
+                else {echo "No";}
+                echo "</li>";
+                echo "<li>Valutazione: ".$hotel["vote"]."</li>";
+                echo "<li>Distanza dal centro: ".$hotel["distance_to_center"]."</li><hr>";
+                echo "</li></ul></li>";
+          }
+        ?>
+    </ol>
+    
+</body>
+</html>
