@@ -48,6 +48,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Hotels</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -63,7 +64,7 @@
                 else {echo "No";}
                 echo "</li>";
                 echo "<li>Valutazione: ".$hotel["vote"]."</li>";
-                echo "<li>Distanza dal centro: ".$hotel["distance_to_center"]."</li><hr>";
+                echo "<li>Distanza dal centro: ".$hotel["distance_to_center"]."</li>";
                 echo "</li></ul></li>";
           }
         ?>
